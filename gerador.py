@@ -8,3 +8,7 @@ def gerar_aposta():
 with open('apostas.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(gerar_aposta())
+
+# Adicione esta função ao seu gerador.py
+def aposta_valida(numeros):
+    return 6 <= len(numeros) <= 15
